@@ -1,7 +1,7 @@
 # EDA-AB-testing-trading-app
 The product is a mobile application for online trading. An exploratory analysis of historical data led to the following assumption: users lack understanding of the trading process and its risks. To test this, an A/B test was launched — the test group received an updated onboarding flow that included training
 
-Продукт — мобильное приложение для онлайн-трейдинга, ориентированное на начинающих инвесторов
+Продукт — мобильное приложение для онлайн-трейдинга, ориентированное на начинающих инвесторов. Разведочный анализ исторических данных привел к следующему предположению: пользователям не хватает понимания процесса торговли финансовыми активами и связанных с ним рисков. Чтобы проверить это, был запущен A/B—тест: тестовая группа проходила обновленный процесс онбординга, который включал обучение
 
 ## Как устроено приложение 
 Перечислим ключевые события пути пользователя: пользователь 
