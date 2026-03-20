@@ -1,7 +1,25 @@
 # EDA-AB-testing-trading-app
 The product is a mobile application for online trading. An exploratory analysis of historical data led to the following assumption: users lack understanding of the trading process and its risks. To test this, an A/B test was launched — the test group received an updated onboarding flow that included training
 
+- Domain: mobile analytics, app type: fintech
+- Tech Stack: python (pandas, numpy, seaborn, scipy, matplotlib, statsmodels), Jupyter Notebook
+- Artefacts: Jupyter Notebook with EDA (objectives, observations, conclusions & hypotheses) — *AB_test_trading_app.ipynb*; Jupyter Notebook with post-hoc analysis of the A/B experiment data (A/B experiment design, statistical tests & results, conclusions & recommendations) — *EDA_trading_app.ipynb*
+
+The required libraries and versions are listed in the *requirements.txt* file
+
+Full project description is only in Russian
+
+---
+
 Продукт — мобильное приложение для онлайн-трейдинга, ориентированное на начинающих инвесторов. Разведочный анализ исторических данных привел к следующему предположению: пользователям не хватает понимания процесса торговли финансовыми активами и связанных с ним рисков. Чтобы проверить это, был запущен A/B—тест: тестовая группа проходила обновленный процесс онбординга, который включал обучение
+
+- Домен: аналитика мобильных приложений, тип приложения: финтех
+- Стек: python (pandas, numpy, seaborn, scipy, matplotlib, statsmodels), Jupyter Notebook
+- Артефакты: Jupyter Notebook с исследовательским анализом данных (цели, наблюдения, выводы и гипотезы) — *AB_test_trading_app.ipynb*; Jupyter Notebook с анализом данных A/B эксперимента (дизайн эксперимента, статистические тесты и результаты, выводы и рекомендации) — *EDA_trading_app.ipynb*
+
+Необходимые библиотеки для запуска проекта указаны в файле *requirements.txt*
+
+---
 
 Содержание:
 1. [Как устроено приложение](#как-устроено-приложение)
@@ -12,6 +30,7 @@ The product is a mobile application for online trading. An exploratory analysis 
     - [Дизайн эксперимента](#дизайн-эксперимента)
     - [Анализ результатов A/B теста](#анализ-результатов-ab-теста)
     - [Вывод на основе анализа результатов A/B-эксперимента](#вывод-на-основе-анализа-результатов-ab-эксперимента)
+
 
 ## Как устроено приложение 
 Перечислим ключевые события пути пользователя: пользователь 
@@ -24,7 +43,7 @@ The product is a mobile application for online trading. An exploratory analysis 
 7) совершает повторное пополнение счета
 
 ## Описание данных
-В репозитории 2 датасета: первый с историческими данными для проведения EDA, второй — с данными за период A/B эксперимента
+В проекте используется 2 датасета: первый с историческими данными для проведения EDA, второй — с данными за период A/B эксперимента для проведения post-hoc анализа
 
 - Датасет **pa_sollmafin_hist.csv** содержит исторические данные о ключевых действиях новых пользователей, привлечённых в период с 1 апреля по 1 июня 2025 года включительно. В датасете собраны действия пользователей до оформления второго депозита
 - Датасет **pa_sollmafin_abt.csv** содержит данные А/В-эксперимента — все действия новых пользователей, которые зарегистрировались со 2 по 15 июня 2025 года включительно. Данные собраны в рамках проверки гипотезы о влиянии нового онбординга на поведение и активность пользователей. Пользователи уже распределены по группам А/В-эксперимента
